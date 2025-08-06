@@ -9,7 +9,7 @@ import os
 import sys
 
 # cdFMC Connection Settings - can be overridden by environment variables or arguments
-FMC_URL = os.getenv('FMC_URL', "https://cisco-kgreeshm-cdo-tenant--sd1zqt.app.us.cdo.cisco.com/")  # Your cdFMC URL
+FMC_URL = os.getenv('FMC_URL', "")  # Your cdFMC URL
 API_KEY = os.getenv('API_KEY', "")
 
 # Static domain UUID for cdFMC (this is constant)

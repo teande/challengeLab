@@ -9,8 +9,8 @@ import os
 import sys
 
 # cdFMC Connection Settings - can be overridden by environment variables or arguments
-FMC_URL = os.getenv('FMC_URL', "https://cisco-kgreeshm-cdo-tenant--sd1zqt.app.us.cdo.cisco.com/")  # Your cdFMC URL
-API_KEY = os.getenv('API_KEY', "eyJraWQiOiIwIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOiIwIiwicm9sZXMiOlsiUk9MRV9TVVBFUl9BRE1JTiJdLCJpc3MiOiJpdGQiLCJjbHVzdGVySWQiOiI2Iiwic3ViamVjdFR5cGUiOiJ1c2VyIiwiY2xpZW50X2lkIjoiYXBpLWNsaWVudCIsInBhcmVudElkIjoiMmU5MTlhNzktMGNkNi00ZDU0LWI4ZWEtYmY4NjY3ZjQwNDQxIiwic2NvcGUiOlsidHJ1c3QiLCJyZWFkIiwiMmU5MTlhNzktMGNkNi00ZDU0LWI4ZWEtYmY4NjY3ZjQwNDQxIiwid3JpdGUiXSwiaWQiOiI5MmJjM2FmMC1mMDU3LTQxMzctYmQ1Mi1jMTRjZDUyZDhlMDciLCJleHAiOjM5MDE3MjEzMTgsInJlZ2lvbiI6InByb2QiLCJpYXQiOjE3NTQyMzc3MzEsImp0aSI6Ijg4Y2Y1MmFjLTE3ZjYtNDAwZC05OGFhLWYxYzg0OTM4ZDA0ZiJ9.Xofgvm7cax9xb9ihrnXgpeHbda2iTHZjEwLNJiR_WiKXj-vWFPu1bZYNOwtPdtB3ETk_ydSmCa-TIjP4ZhcLRpxUYkvqA6_AlHmzFvj0I3ns9eTbld1f-VS44MPZ1R9QnY0mWljWprDcaS7kwuZHPQqL-XP1LZkNu2u2scpWgtZm75Wc2rZ4Thr7-BZnSbJtk08D4hU-UW_X4ezEg_WovgLEwtLtKN_8tXBPrDXpTfsfth1mMDe1qPNa9q4qFf1WmuOe8XT8N0S9Di8DfaHXiQEfoA9cNR9Bs1YB6JhpHgTPvFKCNcrlOBnzNKt-ZNFRjtCMrVErJJjSgDrp4t80sA")
+FMC_URL = os.getenv('FMC_URL', "")  # Your cdFMC URL
+API_KEY = os.getenv('API_KEY', "")
 
 # Static domain UUID for cdFMC (this is constant)
 DOMAIN_UUID = "e276abec-e0f2-11e3-8169-6d9ed49b625f"

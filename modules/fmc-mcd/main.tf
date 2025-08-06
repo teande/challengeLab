@@ -13,7 +13,7 @@ terraform {
 
 # Data source for intrusion policy "Balanced Security and Connectivity"
 data "fmc_intrusion_policy" "balanced_security_connectivity" {
-  name = "Balanced Security and Connectivity"
+  name = "PseudoCo IPS"
 }
 
 # Create security zone "ciscomcd-vni" 

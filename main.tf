@@ -87,7 +87,8 @@ module "fmc_network_objects" {
 
 # Configure Multi Cloud Defense (MCD) policy
 module "fmc_mcd" {
-  source = "./modules/fmc-mcd"
+  depends_on = [module.fmc_devices]
+  source     = "./modules/fmc-mcd"
 }
 
 # Configure policy assignments

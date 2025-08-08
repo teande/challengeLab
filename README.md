@@ -10,8 +10,8 @@ This infrastructure automation handles:
 - **Network Configuration**: Static routes, network objects, and hosts
 - **Policy Management**: Access control and NAT policy assignments
 - **OSPF Configuration**: Dynamic routing protocol setup
-- **VPN Tunnels**: Site-to-site VPN configurations to AWS and secure access
 - **Multi-Cloud Defense**: MCD policy integration
+- **VPN Tunnels**: Site-to-site VPN configurations to AWS and secure access
 
 ## 🏗️ Architecture
 

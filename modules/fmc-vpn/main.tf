@@ -47,7 +47,7 @@ resource "fmc_vpn_s2s_ike_settings" "ike_settings" {
   count                                  = 2
   vpn_s2s_id                             = count.index == 0 ? fmc_vpn_s2s.aws1_tunnel.id : fmc_vpn_s2s.aws2_tunnel.id
   ikev2_authentication_type              = "MANUAL_PRE_SHARED_KEY"
-  ikev2_manual_pre_shared_key            = "Cisco@123"
+  ikev2_manual_pre_shared_key            = "Cisco_123"
   ikev2_enforce_hex_based_pre_shared_key = false
 
   depends_on = [

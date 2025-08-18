@@ -101,11 +101,12 @@ def main(args):
             print("Response JSON:")
             print(json.dumps(response.json(), indent=2))
 
-    except requests.exceptions.RequestException as e:
+    except (requests.exceptions.RequestException, ConnectionError, OSError, Exception) as e:
         print(f"An error occurred during the request: {e}")
-        if e.response:
+        # Only try to access response if this is a requests exception
+        if isinstance(e, requests.exceptions.RequestException) and hasattr(e, 'response') and e.response is not None:
             print(f"Response Body: {e.response.text}")
-            sys.exit(1)
+        sys.exit(1)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Import device configuration to Cisco FMC or cdFMC.")
